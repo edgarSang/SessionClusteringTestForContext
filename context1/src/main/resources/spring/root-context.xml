@@ -9,10 +9,10 @@
  
  	<context:annotation-config/>
  	
- 	<!-- Embedded Redis Service -->
+ 	<!-- Embedded Redis Service 
 	<bean id="embeddedRedisConfiguration" class="com.eh.restapi.EmbeddedRedisConfiguration" p:maxmemory="128M"/>
- 	
- 	<!-- Spring Session -->
+ 	-->
+ 	<!-- Spring Session 
 	<bean class="org.springframework.session.data.redis.config.annotation.web.http.RedisHttpSessionConfiguration">
 		<property name="cookieSerializer">
 			<bean class="org.springframework.session.web.http.DefaultCookieSerializer" p:cookiePath="/" />
@@ -21,7 +21,5 @@
  
     <bean class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory"
           p:port="6379"/>
-     
+    -->
 </beans>
-
-
